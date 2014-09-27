@@ -1,0 +1,21 @@
+@(title: Option[String] = None)(content: Html)
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Acceptto SSO Client - Scala@title.map(" - " + _).getOrElse("")</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Acceptto SSO Client Sample with Scala">
+    <link href="@routes.Assets.at("stylesheets/bootstrap.min.css")" media="all" rel="stylesheet" type="text/css" />
+    <link href="@routes.Assets.at("stylesheets/application.css")" media="all" rel="stylesheet" type="text/css" />
+    <link href="@routes.Assets.at("stylesheets/main.css")" media="all" rel="stylesheet" type="text/css" />
+    <link href="@routes.Assets.at("stylesheets/font-awesome.css")" media="all" rel="stylesheet" type="text/css" />
+
+    <script src="@routes.Assets.at("javascript/jquery.min.js")"></script>
+</head>
+<body>
+
+@content
+
+</body>
+</html>
